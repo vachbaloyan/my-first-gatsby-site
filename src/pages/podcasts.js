@@ -146,7 +146,7 @@ const podcastBanner = {
         twitter: '#',
     },
     button: {
-        // url: '#',
+        url: '#',
         text: 'See More',
     }
 }
