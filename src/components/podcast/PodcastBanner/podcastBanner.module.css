@@ -1,0 +1,86 @@
+.podcasts-banner-section {
+    font-family: 'Poppins', sans-serif;
+    background: #F6EFFF;
+    padding: 10px 0;
+}
+
+.podcast-banner {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 30px;
+    background: #062A4C;
+    padding: 50px 50px 30px;
+    box-shadow: 0px 4px 7px 0px #1F10338A;
+}
+
+.podcast-banner h3 {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 15px;
+}
+
+.podcast-banner p {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    margin-bottom: 30px;
+}
+
+.podcast-banner .podcast-banner-links-wrapper {
+    gap: 30px;
+}
+
+.podcast-banner .podcast-banner-img {
+    position: relative;
+}
+
+.podcast-banner .banner-item {
+    text-decoration: none;
+    color: unset;
+    display: block;
+    background: #fff;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.podcast-banner .banner-item h3 {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 15px 0 7px;
+    text-align: center;
+}
+
+.podcast-banner .item-thumbnail {
+    width: 200px;
+    margin: 0 auto;
+    height: 200px;
+    display: block;
+}
+
+.podcast-banner .show-more-btn {
+    padding: 18px 40px;
+    color: #232323;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 9px;
+    background: #1BFED1;
+    text-decoration: none;
+    width: max-content;
+    margin-top: 31px;
+}
+
+@media screen and (max-width:991.9px) {
+    .podcast-banner {
+        padding: 20px;
+    }
+}

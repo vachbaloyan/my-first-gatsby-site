@@ -1,0 +1,38 @@
+.podcasts-section {
+    font-family: 'Poppins', sans-serif;
+    background: #F6EFFF;
+    padding: 60px 0;
+}
+
+.podcasts-section .podcasts-section-wrapper {
+    border-radius: 30px;
+    background: #FFF;
+    padding: 150px 78px 50px;
+    margin-bottom: 100px;
+}
+
+.podcasts-section .podcasts-items-wrapper {
+    gap: 100px;
+}
+
+.podcasts-section .show-more-podcasts {
+    color: #232323;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    padding: 18px 40px;
+    border: 0;
+    outline: 0;
+    border-radius: 9.029px;
+    background: #1BFED1;
+    margin: 58px auto 0;
+    display: block;
+}
+
+@media screen and (max-width:991.9px) {
+    .podcasts-section .podcasts-section-wrapper {
+        padding: 20px;
+    }
+}
