@@ -13,7 +13,7 @@ const heroBlock = {
         placeholder="none"
         loading="eager"
         alt="Heroimage"
-        src="../images/heroImg.png"
+        src="../images/podcast/heroImg.png"
         className="mw-100"
     />
     </>,
@@ -47,7 +47,7 @@ const podcastArchive = {
                     placeholder="none"
                     loading="eager"
                     alt="Thumbnail"
-                    src="../images/podcast-thumbnail.jpg"
+                    src="../images/podcast/podcast-thumbnail.jpg"
                     className='mw-100'
                 />
             </>,
@@ -75,7 +75,7 @@ const podcastArchive = {
                     placeholder="none"
                     loading="eager"
                     alt="Thumbnail"
-                    src="../images/podcast-thumbnail.jpg"
+                    src="../images/podcast/podcast-thumbnail.jpg"
                     className='mw-100'
                 />
             </>,
@@ -103,7 +103,7 @@ const podcastArchive = {
                     placeholder="none"
                     loading="eager"
                     alt="Thumbnail"
-                    src="../images/podcast-thumbnail.jpg"
+                    src="../images/podcast/podcast-thumbnail.jpg"
                     className='mw-100'
                 />
             </>,
@@ -132,7 +132,7 @@ const podcastBanner = {
             placeholder="none"
             loading="eager"
             alt="BannerImg"
-            src="../images/banner-img.png"
+            src="../images/podcast/banner-img.png"
             className='mw-100'
         /></>,
     title: `About Podcast Host`,

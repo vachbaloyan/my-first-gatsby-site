@@ -19,7 +19,7 @@ const content = {
             placeholder="none"
             loading="eager"
             alt="AudioImg"
-            src="../images/audio-screenshot.jpg"
+            src="../images/podcast/audio-screenshot.jpg"
             className='mw-100'
         />
     </>,
@@ -82,7 +82,7 @@ const podcastBanner = {
             placeholder="none"
             loading="eager"
             alt="BannerImg"
-            src="../images/banner-img.png"
+            src="../images/podcast/banner-img.png"
             className='mw-100'
         /></>,
     title: `About Podcast Host`,

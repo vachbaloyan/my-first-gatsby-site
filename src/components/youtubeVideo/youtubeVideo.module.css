@@ -1,0 +1,44 @@
+.youtube-video-block {
+    position: relative;
+    height: 100%;
+}
+.youtube-video-wrapper,
+.youtube-video-placeholder {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+
+}
+
+.youtube-video-placeholder {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.youtube-video-placeholder::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(./images/play.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 767.9px) {
+    .youtube-video-wrapper,
+    .youtube-video-placeholder  {
+        height: 250px;
+        margin-top: 50px;
+    }
+}

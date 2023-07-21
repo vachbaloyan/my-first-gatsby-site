@@ -1,0 +1,31 @@
+.growth-partners {
+    background-color: #072341;
+    font-family: 'Poppins',sans-serif;
+    padding: 16px 0;
+}
+
+.growth-partners .section-title {
+    color: #FFF;
+    font-size: 21.967px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.growth-partners .partners-logos-wrapper{
+    gap: 37px;
+}
+.growth-partners .partners-logos-wrapper .single-logo{
+    width: 128px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:991.9px){
+    .growth-partners .partners-logos-wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

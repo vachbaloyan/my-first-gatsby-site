@@ -11,7 +11,7 @@ const PodcastHero = ({ block}) => {
                     placeholder="none"
                     loading="eager"
                     alt="HeroBackground"
-                    src="../../../images/hero.jpg"
+                    src="../../../images/podcast/hero.jpg"
                     className={s.backgroundImage}
                 />}
                 <div className={s.heroBackgroundDark}>
@@ -25,7 +25,7 @@ const PodcastHero = ({ block}) => {
                                         placeholder="none"
                                         loading="eager"
                                         alt="AudioImage"
-                                        src="../../../images/audio.png"
+                                        src="../../../images/podcast/audio.png"
                                         className="mw-100"
                                     />}
                                     <span>{parse(block.button?.text ?? '')}</span>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import * as s from './podcastArchive.module.css';
 import SinglePodcastItem from "../PodcastSingleItem/SinglePodcastItem";
 const PodcastArchive = ({ block }) => {
-    console.log(block)
     let podcastItems = block.podcastItems;
     const [visibleItems, setVisibleItems] = useState(1);
     const itemsToShow = podcastItems.slice(0, visibleItems);

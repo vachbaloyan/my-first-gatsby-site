@@ -27,7 +27,7 @@ const SinglePodcastItem = ({ single }) => {
                                 placeholder="none"
                                 loading="eager"
                                 alt="Audio"
-                                src="../../../images/audio-screenshot.jpg"
+                                src="../../../images/podcast/audio-screenshot.jpg"
                                 className='mw-100'
                             />}
                         </div>

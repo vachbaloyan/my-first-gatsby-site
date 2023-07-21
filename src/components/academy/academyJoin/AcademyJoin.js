@@ -1,11 +1,11 @@
-import { Link } from 'gatsby';
 import parse from 'html-react-parser';
 import React from 'react';
-import * as s from './join.module.css';
+import * as s from './academyJoin.module.css';
 import { StaticImage } from "gatsby-plugin-image";
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 
-const JoinSection = ({ block }) => {
+const AcademyJoin = ({ block }) => {
     return (
         <>
             <section className={s.joinSection}>
@@ -13,23 +13,22 @@ const JoinSection = ({ block }) => {
                     placeholder="none"
                     loading="eager"
                     alt="HeroBackground"
-                    src="../../../images/podcast/joinSectionBackground.png"
+                    src="./images/backgroundGradient.png"
                     className={s.backgroundImage}
                 />}
                 <div className="container position-relative">
                     <div className="row justify-content-between">
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 d-flex flex-column justify-content-center">
+                            <div>
                             <h3>{block.title}</h3>
                             <p>{parse(block.description)}</p>
-                            <Link to={block.btn.url} className={s.ctaBtn}>
-                                {block.btn.text}
-                            </Link>
+                            {!!block.btn.text &&
+                                    <button onClick={() => scrollTo('#applySection')} className={s.ctaBtn}>{block.btn.text}</button>
+                                }
+                            </div>
                         </div>
                         <div className="col-lg-5">
-                            <iframe src="https://www.youtube.com/embed/2uHaXcHE40A"
-                                title="Mastering Growth Hacking: Scaling Strategies, Learning from Failure, and Data-Driven Experimentation"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                ></iframe>
+                            {block.image}
                         </div>
                     </div>
                 </div>
@@ -37,4 +36,4 @@ const JoinSection = ({ block }) => {
         </>
     )
 }
-export default JoinSection;
+export default AcademyJoin;
