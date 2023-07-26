@@ -1,7 +1,6 @@
 import React from 'react';
 import * as s from './academyPartners.module.css';
 const AcademyPartners = ({ block }) => {
-    console.log(block.partners)
     return (
         <>
             <section className={s.growthPartners}>

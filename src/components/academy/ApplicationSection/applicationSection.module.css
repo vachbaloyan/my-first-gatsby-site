@@ -1,0 +1,106 @@
+.application-section {
+    padding: 50px 0 100px;
+    background-color: #063B6D;
+    font-family: 'Poppins', sans-serif;
+}
+.application-section .wrapper{
+    padding: 0 180px;
+}
+.application-section .section-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.application-section .description {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 0 70px;
+    margin-bottom: 10px;
+}
+
+.application-section .deadline {
+    margin-bottom: 35px;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+.application-section .deadline-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.application-section .deadline-date {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.application-section .apply-block {
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.application-section .apply-block .block-title {
+    color: #F5A173;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.application-section .apply-block .block-description {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    flex-grow: 1;
+}
+
+.application-section .apply-block .block-button {
+    border-radius: 30px;
+    padding: 19px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    width: max-content;
+}
+
+@media screen and (max-width:991.9px) {
+    .application-section .wrapper{
+        padding: 0;
+    }
+    .application-section .description {
+        padding: 0;
+    }
+    .application-section .deadline{
+        flex-direction: column;
+        align-items: center;
+    }
+    .apply-row{
+        row-gap: 24px;
+    }
+}

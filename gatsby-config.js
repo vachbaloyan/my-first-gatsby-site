@@ -7,6 +7,12 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+const myCustomQueries = {
+  // xs: '(max-width: 320px)',
+  // sm: '(max-width: 720px)',
+  // md: '(max-width: 1024px)',
+  lg: '(max-width: 992px)',
+};
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -40,5 +46,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-plugin-breakpoints",
+      options: {
+          queries: {
+            lg: '(max-width: 992px)',
+          },
+      },
+  },
   ],
+  
 }

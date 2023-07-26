@@ -3,7 +3,7 @@ import { useState } from "react";
 import YouTube from "react-youtube";
 import * as s from "./youtubeVideo.module.css";
 
-const YoutubeVideo = ({ image, videoId }) => {
+const YoutubeVideo = ({ image, videoId , sectionClasses}) => {
   const [opened, setOpened] = useState(false);
 
   const toggleOpened = e => {
@@ -13,7 +13,7 @@ const YoutubeVideo = ({ image, videoId }) => {
   return (
     <section className={s.youtubeVideoBlock}>
       {opened === false && (
-        <div onClick={toggleOpened} className={s.youtubeVideoPlaceholder}>
+        <div onClick={toggleOpened} className={`${s.youtubeVideoPlaceholder} ${!!sectionClasses ? sectionClasses : ''}`}>
           {image}
         </div>
       )}
@@ -22,7 +22,7 @@ const YoutubeVideo = ({ image, videoId }) => {
           videoId={videoId}
           loading="lazy"
           iframeClassName="mw-100 w-100 h-100"
-          className={`mw-100 w-100 ${s.youtubeVideoWrapper}`}
+          className={`mw-100 w-100 ${s.youtubeVideoWrapper} ${!!sectionClasses ? sectionClasses : ''}`}
           opts={{ playerVars: { autoplay: 1 } }}
         />
       )}
